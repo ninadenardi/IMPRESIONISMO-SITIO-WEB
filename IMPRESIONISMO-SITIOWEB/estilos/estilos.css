@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.header{
+    background-color: #9EAA99;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #222221;
+}
+
+
+
+.principal{
+    width: 100%;
+    padding-bottom: 400px;
+}
+
+.principal img{
+    width: 100%;
+}
+
+.text-prin{
+    width: 100%;
+    position: relative;
+    margin-top: -40%;
+}
+
+.text-prin h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 115px;
+    font-family: 'Merrweather', serif;
+}
+.text-prin h5{
+    text-align: center;
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 100;
+    font-family: 'Merrweather', serif;
+}
+
+
+
+
+h2 {font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 50px;
+}
+h3 {font-family: 'Merriweather', serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10rem auto 0 auto;
+    padding-bottom: 30px;
+}
+
+.section img{
+    height: 350px;
+}
+.section h4{
+    margin: 0;
+    text-align: left;
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.section p{
+    margin-right: 25px;
+    line-height: 1,7;
+}
+
+
+
+
+
+.nenunfares{
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.nenunfares img{
+width: 100%;
+align-items: center;
+}
+
+.row1{
+    margin: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+
+.row1 .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.row1.box::before{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.2);
+    pointer-events: none;
+}
+
+.row1 .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.row1 .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 #AAC0B3;
+    background: #AAC0B3;
+}
+.row1 .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px #AAC0B3;
+
+}
+.row1 .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #AAC0B3;
+    background: #AAC0B3;
+}
+.row1 .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #AAC0B3;
+
+}
+.row1 .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #AAC0B3;
+    background: #AAC0B3;
+}
+.row1 .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px #AAC0B3;
+
+}
+
+.row1 .box .contenido{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.row1 .box:hover .contenido{
+    color: #fff;
+}
+
+.row1 .box .contenido .h6{
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+.row1 .box .contenido p{
+    margin: 0;
+    padding-top: 13px;
+    padding-bottom: 20px;
+    line-height: 1,5;
+    font-size: 17px;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:#56666b ;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h10{
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+
+.pie-pagina .grupo-1 .box .parrafo a{
+    padding-top: 30px;
+    color: #efefefef;
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box .parrafo a:hover{
+    color: rgb(13, 14, 13);
+}
+
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #70858b;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(13, 14, 13);
+}
+
+.pie-pagina .grupo-2{
+    background-color: #222221;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
