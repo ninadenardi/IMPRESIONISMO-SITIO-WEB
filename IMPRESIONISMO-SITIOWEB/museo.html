@@ -26,5 +26,64 @@
                <li><a href="museo.html">Museo</a></li> 
             </ul>
         </nav>
+        <div class="search">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar...">
+                <label for="check" class="icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label> 
+            </div>
+        </div>
     </header>
+    
+    <div class="text-museo">
+        <h1>Museo</h1>
+        <p>Imágenes relevantes de la vanguardia</p>
+    </div>
+    
+    <div class="full-img" id="fullImgBox">
+        <img src="./imagenes/o2.png" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="./imagenes/o2.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/e 2.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/bal du moulin de la galette.png"onclick="openFullImg(this.src)">
+        <img src="./imagenes/monetconcuadro.png"onclick="openFullImg(this.src)">
+        <img src="./imagenes/impresionismo.png"onclick="openFullImg(this.src)">
+        <img src="./imagenes/lejardin.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/e 1.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/o9.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/r2.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/o1.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/o10.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/f1.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/renoir.autoretrato.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/monet.autoretrato.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/pissaro.autoretrato.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/degas.autoretrato.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/f2 copy.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/c 1.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/f3 copy.png" onclick="openFullImg(this.src)">
+        <img src="./imagenes/e 5.jpeg" onclick="openFullImg(this.src)">
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+
+</body>
+</html>
  
